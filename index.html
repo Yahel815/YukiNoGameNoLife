@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wiki No Game No Life</title>
+        <link rel="icon" href="icono1.png" type="image/x-icon" />
+        <link href="bace.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                    });
+        
+        </script>
+        
+          <!-- *********************************************** -->
+        
+          <!-- ********* CSS ESPECÍFICOS DE LA VISTA ********* -->
+          
+        <link rel="stylesheet" href="dashboard.css">
+        
+          <!-- *********************************************** -->
+    </head>
+    <body background="fondo1.png">
+        <div class="d-flex flex-column columna">
+            <header>
+              <nav class="navbar navbar-expand-lg navegacion">
+                <div class="container-fluid">
+                  <div class="logo-container d-flex align-items-center">
+                    <img src="icon2.png" alt="Wiki No Game No Life" height="40px">
+                    <span>|</span> <!-- Separador "|" -->
+                  </div>
+                  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                            <a class="nav-link indice" aria-current="page" href="#inicio"><b class="letras">Inicio</b></a>
+                            <a class="nav-link indice" href="personajes.html"><b class="letras">Personajes</b></a>
+                            <a class="nav-link indice" href="novel.html"><b class="letras">Novela Ligera</b></a>
+                            <a class="nav-link indice" href="tvsize.html"><b class="letras">Anime</b></a>
+                            <a class="nav-link indice" href="peli0.html"><b class="letras">Película</b></a>
+                    </div>
+                                  <a type="button" class="btn btn-light ms-auto mt-2 mt-lg-0" href="login.html">Login</a>
+                              </div>
+                </div>
+              </nav>
+            </header>
+        
+            <div class="container-fluid flex-grow-1">
+              <!-- Contenido Principal -->
+              <section id="inicio">
+            <div class="carruceles">
+                <div class="Wiki">
+                    <div class="row">
+                        <center>
+                            <h2 class="p-1">Wiki "No Game No Life"</h2>
+                        </center>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-1 order-md-1 container-fluid carrucel1">
+                            <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                                            <a href="#personajes">
+                                            <img src="personajes01.jpg" class="d-block w-90" alt="...">
+                                                <div class="carousel-caption">
+                                                    <h5>Personajes</h5>
+                                                    <p>Conoce más acerca de tu Personaje Favorito</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                                            <a href="#Novela">
+                                                <img src="novelas01.jpg" class="d-block w-90" alt="...">
+                                                    <div class="carousel-caption">
+                                                        <h5>Novela Ligera</h5>
+                                                        <p>Conoce hasta donde ha llegado está Historia</p>
+                                                    </div>
+                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                                            <a href="#anime">
+                                                <img src="fondo7.1.png" class="d-block w-90" alt="...">
+                                                    <div class="carousel-caption">
+                                                        <h5>Anime y Película</h5>
+                                                        <p>Disfruta de una Gran Joyita del Anime</p>
+                                                    </div>
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="historia">
+            <div class="cursos animacion">
+            <style>
+                /* Estilo para el contenedor principal */
+                .text-principal {
+                    font-family: Arial, sans-serif;
+                    background-color: #f9f9f92c;
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px rgba(223, 7, 7, 0.1);
+                }
+                /* Estilo para los títulos */
+                h1, h2 {
+                    color: #ffffff;
+                    margin-bottom: 19px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+                /* Estilo para los párrafos */
+                .letraparr {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #ffffff;
+                }
+                
+            </style>
+            <table align="center" width="90%" cellpadding="3" cellspacing="25">
+                <td>
+                        <div class="text-principal">
+                            <h1>"No Game No Life"</h1>
+                            <p class="letraparr">La serie de novelas ligeras <em>No Game No Life</em>, escrita por Yuu Kamiya, nos sumerge en un mundo donde todo se decide a través de juegos. Los protagonistas, Sora y Shiro, forman el grupo invicto conocido como <strong>Blank</strong>. Desafiados por el dios de los juegos, son convocados a <strong>Disboard</strong>, donde las fronteras nacionales y las vidas de las personas dependen de las partidas.</p>
+                            <p class="letraparr">La historia combina elementos de fantasía, ciencia ficción e isekai, y su enfoque en los juegos como medio de resolución la hace única y cautivadora.</p>
+                            <h2>El Autor: Yuu Kamiya</h2>
+                            <p class="letraparr">Yuu Kamiya es el talentoso autor detrás de esta emocionante saga. A lo largo de doce volúmenes, ha creado un mundo lleno de desafíos, estrategias y personajes inolvidables.</p>
+                        </div>
+                </td>
+                <td align="center" >
+                    <div class="tabla">
+                        <img src="historia02.jpg" width="100%" height="100%" title="No Game No Life">
+                    </div>
+                </td>
+                </tr>
+            </table>
+        </div>
+        </section>
+        <hr>
+        <section id="personajes">
+            <div class="cursos animacion">
+                <div class="row">
+                    <h2 class="text-center"> Personajes</h2>
+                    <p class="fst-italic text-center">Conoce más acerca de todos los personajes</p>
+                </div>
+                <div class="row">
+                    <div class="col-10 container d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="row row-cols-1 row-cols-md-3 mx-auto pt-3">
+                                                                                            <div class="col pt-2">
+                                            <div class="card">
+                                                <img src="sora.png" class="card-img-top" alt="Programación básica" height="200px">
+                                                <div class="card-body">
+                                                    <div class="carousel-caption">
+                                                        <h5>Sora</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                        <div class="col pt-2">
+                                            <div class="card">
+                                                <img src="shiro.png" class="card-img-top" alt="Programación web" height="200px">
+                                                <div class="card-body">
+                                                    <div class="carousel-caption">
+                                                        <h5>Shiro</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                        <div class="col pt-2">
+                                            <div class="card">
+                                                <img src="jibril.jpg" class="card-img-top" alt="Bases de datos" height="200px">
+                                                <div class="card-body">
+                                                    <div class="carousel-caption">
+                                                        <h5>Jibril</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                            <p class="card-text1" align="center"><a href="personajes.html" class="link-danger link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-0-hover"><font color="white">Ver más</font></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="Novela">
+            <div class="eventos animacion">
+                <div class="row">
+                    <h2 class="text-center">Novela Ligera</h2>
+                    <p class="fst-italic text-center">Conoce todos los Volúmenes Disponibles</p>
+                </div>
+                <div class="row">
+                    <div class="col-10 container d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="row row-cols-1 row-cols-md-4 mx-auto">
+                                        <div class="col pt-3">
+                                            <div class="card">
+                                                <img src="volumen1.jpg" class="card-img-top lista_eventos" alt="Cinema">
+                                                <div class="card-body">
+                                                    <h5 class="card-title" align="center"><font color="white">Volumen 1</font></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col pt-3">
+                                            <div class="card">
+                                                <img src="volumen2.jpg" class="card-img-top lista_eventos" alt="Miembros del equipo">
+                                                <div class="card-body">
+                                                    <h5 class="card-title" align="center"><font color="white">Volumen 2</font></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col pt-3">
+                                            <div class="card">
+                                                <img src="volumen3.jpg" class="card-img-top lista_eventos" alt="Miembros del equipo">
+                                                <div class="card-body">
+                                                    <h5 class="card-title" align="center"><font color="white">Volumen 3</font></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col pt-3">
+                                            <div class="card">
+                                                <img src="volumen4.jpg" class="card-img-top lista_eventos" alt="Miembros del equipo">
+                                                <div class="card-body">
+                                                    <h5 class="card-title" align="center"><font color="white">Volumen 4</font></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                    <p class="card-text1" align="center"><a href="novel.html" class="link-danger link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-0-hover"><font color="white">Ver más</font></a></p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="conocenos animacion" id="anime">
+                <div class="row">
+                    <h2 class="text-center p-3">Adaptaciones ANIME</h2>
+                    <p class="fst-italic"></p>
+                </div>
+                <div class="cursos animacion">
+                    <div class="row">
+                        <div class="col-10 container d-flex justify-content-center align-items-center">
+                            <div class="row">
+                                <div class="row row-cols-1 row-cols-md-2 mx-auto pt-2">
+                                            <div class="col pt-2">
+                                                <div class="card">
+                                                    <a href="tvsize.html">
+                                                        <img src="noganoli.jpg" class="card-img-top" alt="Programación básica" height="400px">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <div class="carousel-caption-one">
+                                                            <h3 align="center">No Game No Life (TV Size)</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col pt-2">
+                                                <div class="card">
+                                                    <a href="peli0.html"> 
+                                                        <img src="noganoli0.jpg" class="card-img-top" alt="Programación web" height="400px">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <div class="carousel-caption-one">
+                                                            <h3 align="center">No Game No Life 0 (Película)</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+            </div>
+        
+            <div class="container-fluid pt-3 text-light">
+              <footer class="text-center mt-auto">
+                <div class="row">
+                  <div class="col-lg-8 d-flex align-items-center justify-content-center">
+                    <p class="fs-5 mb-0 text-center"><b>&copy; 2024 Wiki No Game No Life</b></p>
+                  </div>
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <p class="fs-4 mb-1 text-center"><b>Yuki</b></p>
+                    
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <script>
+            document.querySelectorAll('a.nav-link').forEach(anchor => {
+              anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+        
+                // Verifica si el href es una referencia a una sección de la misma página
+                if (href.startsWith('#')) {
+                  e.preventDefault();
+        
+                  const targetId = href.substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  const offset = document.querySelector('.navegacion').offsetHeight;
+        
+                  window.scrollTo({
+                    top: targetElement.offsetTop - offset,
+                    behavior: 'smooth'
+                  });
+                }
+              });
+            });
+          </script>
+    </body>
+</html>

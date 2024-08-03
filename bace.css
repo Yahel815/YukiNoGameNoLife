@@ -1,0 +1,131 @@
+#triggerId {
+    width: 40px;
+    height: 40px;
+    padding: 6px 0;
+    border-radius: 50%;
+    background-color: #fcaeea;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.42857;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.usuario {
+    width: 50%;
+    height: 50%;
+    fill: #6c757d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.btn-group {
+    margin-left: auto;
+}
+
+.dropdown-menu {
+    transform: translate(-70%, 0);
+    left: 50%;
+}
+
+.btn,
+.correo,
+.password {
+    border-radius: 25px;
+}
+
+.carrucel1,
+.carrucel2 {
+    background-color: #dc2395;
+    border-radius: 40px;
+}
+
+footer {
+    background-color: #4c032e;
+
+}
+
+.cuadro {
+    border-radius: 1.5rem;
+}
+
+.navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    background-image: url(back01.png);
+    background-size: cover;
+    background-position: 0%;
+}
+
+
+.columna {
+    min-height: 90vh;
+}
+
+body {
+    padding-top: 0px;
+    /* Ajusta segÃºn la altura de tu barra de navegaciÃ³n */
+    background-size:cover;
+    background-attachment:fixed;
+    
+
+}
+p{
+    color: white;
+}
+.card-text1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    font-style: oblique;
+}
+
+.text-center{
+    color: white;
+    font-size: xx-large;
+}
+.p-1{
+    color: white;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 350%;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.p-5{
+    color: white;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1000%;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.letras{
+    color: #4c032e;
+}
+
+@media (max-width: 570px) {
+    body {
+        padding-top: 0px;
+        /* Ajusta segÃºn la altura de tu barra de navegaciÃ³n en dispositivos mÃ³viles */
+    }
+
+    .navegacion {
+        padding: 10px;
+        background-color: #020f1f;
+    }
+    .dropdown-menu {
+        transform: translate(0%, 0%);
+    left: 50%;
+    }
+}

@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-carousel {
+    width: 100%;
+    /* Ajusta esto segÃšn sea necesario */
+    height: 300px;
+    /* Altura fija */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el ÃĄrea sin distorsionarse */
+}
+
+@keyframes show {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animacion{
+    /*animacion de scroll*/
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    /*tiempo de entrada y salida de la animacion*/
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.carousel-caption {
+    border-radius: 20px;
+    background-color: #4c032e;
+}
+.carousel-caption-one {
+    font-style: oblique;
+    color: white;
+    border-radius: 20px;
+    background-color: #4c032e;
+}
+
+.card{
+    background-color: blueviolet;
+    position: relative;  
+    transition: all 400ms ease; 
+    border-radius: 5px; /* Redondea las esquinas de la imagen */
+
+    /*animacion de scroll*/
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    /*tiempo de entrada y salida de la animacion*/
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+.card:hover {
+    transform: scale(1.05) translateY(-3%);
+    cursor: pointer;
+}
+
+.lista_eventos{
+    height: 400px;
+}

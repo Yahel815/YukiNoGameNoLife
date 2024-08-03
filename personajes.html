@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personajes No Game No Life</title>
+        <link rel="icon" href="icono1.png" type="image/x-icon" />
+        <link href="bace.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="emergente.css" rel="stylesheet">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                    });
+        
+        </script>
+        
+          <!-- *********************************************** -->
+        
+          <!-- ********* CSS ESPECÍFICOS DE LA VISTA ********* -->
+          
+        <link rel="stylesheet" href="dashboard.css">
+        
+          <!-- *********************************************** -->
+    </head>
+    <body background="fondo1.png">
+        <div class="d-flex flex-column columna">
+            <header>
+              <nav class="navbar navbar-expand-lg navegacion">
+                <div class="container-fluid">
+                  <div class="logo-container d-flex align-items-center">
+                    <img src="icon2.png" alt="Wiki No Game No Life" height="40px">
+                    <span>|</span> <!-- Separador "|" -->
+                  </div>
+                  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                            <a class="nav-link indice" aria-current="page" href="index.html"><b class="letras">Inicio</b></a>
+                            <a class="nav-link indice" href="#personajes"><b class="letras">Personajes</b></a>
+                            <a class="nav-link indice" href="novel.html"><b class="letras">Novela Ligera</b></a>
+                            <a class="nav-link indice" href="tvsize.html"><b class="letras">Anime</b></a>
+                            <a class="nav-link indice" href="peli0.html"><b class="letras">Película</b></a>
+                    </div>
+                                  <a type="button" class="btn btn-light ms-auto mt-2 mt-lg-0" href="login.html">Login</a>
+                              </div>
+                </div>
+              </nav>
+            </header>
+        <hr>
+        <section id="personajes">
+            <div class="cursos animacion">
+                <div class="row">
+                    <h1 class="text-center p-1">Personajes</h1>
+                    <p class="fst-italic text-center">Conoce más acerca de todos los personajes</p>
+                </div>
+                <div class="row">
+                    <div class="col-10 container d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="row row-cols-1 row-cols-md-4 mx-auto pt-3">
+                                        <div class="col pt-2">
+                                            <div class="ver-mas" onclick="mostrarPopup01()"><div class="card">
+                                                <img src="novelas01.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                                <div class="card-body">
+                                                    <div class="carousel-caption">
+                                                        <h5>Sora</h5>
+                                                    </div>
+                                                </div>
+                                            </div></div>
+                                        </div>
+                                            <!-- Contenido de la ventana emergente -->
+                                                <div class="popup" id="miPopup1">
+                                                    <div class="container01">
+                                                        <ul>
+                                                            <li><strong>Nombre:</strong> Sora</li>
+                                                            <li><strong>Quién es:</strong> Sora es un NEET (joven que no estudia, trabaja ni sale de casa) brillante y adicto a los videojuegos. A pesar de su actitud despreocupada, Sora es extremadamente astuto y manipulador.</li>
+                                                            <li><strong>Raza:</strong> Humano (Imanity)</li>
+                                                            <li><strong>Edad:</strong> 18 años</li>
+                                                            <span class="cerrar" onclick="cerrarPopup01()">Cerrar</span>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Script para mostrar y ocultar la ventana emergente -->
+                                                <script>
+                                                    function mostrarPopup01() {
+                                                        document.getElementById("miPopup1").style.display = "block";
+                                                    }
+                                                    function cerrarPopup01() {
+                                                        document.getElementById("miPopup1").style.display = "none";
+                                                    }
+                                                </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup02()"><div class="card">
+                                        <img src="shiro.png" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Shiro</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup2">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Shiro</li>
+                                                    <li><strong>Quién es:</strong> Shiro es una NEET superdotada y experta en cálculos.
+                                                    Junto con su hermano Sora, forman el dúo "Blank" (Kuuhaku), el nombre de usuario que utilizan en juegos online y que significa "espacio en blanco".</li>
+                                                    <li><strong>Raza:</strong> Humana (Imanity)</li>
+                                                    <li><strong>Edad:</strong> 11 años</li>
+                                                    <span class="cerrar" onclick="cerrarPopup02()">Cerrar</span>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup02() {
+                                                document.getElementById("miPopup2").style.display = "block";
+                                            }
+                                            function cerrarPopup02() {
+                                                document.getElementById("miPopup2").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup03()"><div class="card">
+                                        <img src="jibril.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Jibril</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup3">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Jibril</li>
+                                                    <li><strong>Quién es:</strong> Jibril es la más joven y fuerte de la raza Flügel. Su amor por el conocimiento comenzó antes de la declaración de los Diez Mandamientos. Desafió la ley de compartir libros creada por el Consejo de las Dieciocho Alas y dejó Avant Heim, su tierra natal, para ganar la Biblioteca Nacional de Elchea en un juego contra el rey anterior. </li>
+                                                    <li><strong>Raza:</strong> Flügel (una raza alada y poderosa)</li>
+                                                    <li><strong>Edad:</strong> 6407 años</li>
+                                                    <span class="cerrar" onclick="cerrarPopup03()">Cerrar</span>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup03() {
+                                                document.getElementById("miPopup3").style.display = "block";
+                                            }
+                                            function cerrarPopup03() {
+                                                document.getElementById("miPopup3").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup04()"><div class="card">
+                                        <img src="dola.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Stephanie Dola</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup04">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Stephanie Dola</li>
+                                                    <li><strong>Quién es:</strong> Es la actual princesa del Reino de Elkia. Aunque expresiva y emocional, no puede ocultar sus sentimientos fácilmente. Cree en el potencial de Imanity y se enamora de Sora debido a los juramentos que la obligan a hacerlo. A pesar de su educación e inteligencia, no es buena jugando juegos y perdió ante los hermanos Sora y Shiro, convirtiéndose en su sirvienta.</li>
+                                                    <li><strong>Raza:</strong> Imanity (humana)</li>
+                                                    <li><strong>Edad:</strong> 18 años</li>
+                                                    <span class="cerrar" onclick="cerrarPopup04()">Cerrar</span>
+                                                </ul>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup04() {
+                                                document.getElementById("miPopup04").style.display = "block";
+                                            }
+                                            function cerrarPopup04() {
+                                                document.getElementById("miPopup04").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup05()"><div class="card">
+                                        <img src="tet.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Tet</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup05">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Tet</li>
+                                                    <li><strong>Quién es:</strong> Tet es un genio en estrategias y dios de los juegos, un Old Deus que surgió de la imaginación de Riku Dola,  y su existencia está ligada al concepto mismo de los juegos. 
+                                                    <li><strong>Raza:</strong> Old Deus (físicamente)</li>
+                                                    <li><strong>Edad:</strong> Más de 6000 años</li>
+                                                    <span class="cerrar" onclick="cerrarPopup05()">Cerrar</span>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup05() {
+                                                document.getElementById("miPopup05").style.display = "block";
+                                            }
+                                            function cerrarPopup05() {
+                                                document.getElementById("miPopup05").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup06()"><div class="card">
+                                        <img src="kurami.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Kurami Zell</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup06">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Kurami Zell (también conocida como Chlammy Zell)</li>
+                                                    <li><strong>Quién es:</strong> Kurami es una humana que se alió con los elfos para ganar el concurso del rey. Cree que los humanos son débiles y deben depender de otros para sobrevivir. A pesar de su educación e inteligencia, perdió ante Sora y Shiro, convirtiéndose en su sirvienta.</li>
+                                                    <li><strong>Raza:</strong> Humano (Imanity)</li>
+                                                    <li><strong>Edad:</strong> 18 años</li>
+                                                    <span class="cerrar" onclick="cerrarPopup06()">Cerrar</span>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup06() {
+                                                document.getElementById("miPopup06").style.display = "block";
+                                            }
+                                            function cerrarPopup06() {
+                                                document.getElementById("miPopup06").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup07()"><div class="card">
+                                        <img src="fiel.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Fiel Nirvalen</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup07">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Fiel Nirvalen</li>
+                                                    <li><strong>Quién es:</strong> Fii, abreviado, es amiga y compañera de Kurami. Es una elfa de 52 años de la prestigiosa familia Nirvalen, una de las familias más destacadas de la raza élfica. A pesar de que Kurami es esclava de la familia Nirvalen, Fii la trata como una madre trata a su hijo.</li>
+                                                    <li><strong>Raza:</strong> Elfa</li>
+                                                    <li><strong>Edad</strong> 52 años</li>
+                                                </ul>
+                                                <span class="cerrar" onclick="cerrarPopup07()">Cerrar</span>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup07() {
+                                                document.getElementById("miPopup07").style.display = "block";
+                                            }
+                                            function cerrarPopup07() {
+                                                document.getElementById("miPopup07").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup08()"><div class="card">
+                                        <img src="izuna.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Izuna Hatsuse</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup08">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Izuna Hatsuse</li>
+                                                    <li><strong>Quién es:</strong> Izuna es una de las líderes del gremio de los Hoshin, una de las razas que viven en el mundo de No Game No Life.</li>
+                                                    <li><strong>Raza:</strong> Lobo</li>
+                                                    <li><strong>Edad:</strong> No especificada</li>
+                                                    <span class="cerrar" onclick="cerrarPopup08()">Cerrar</span>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup08() {
+                                                document.getElementById("miPopup08").style.display = "block";
+                                            }
+                                            function cerrarPopup08() {
+                                                document.getElementById("miPopup08").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup09()"><div class="card">
+                                        <img src="shuvi.png" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Schwi Dola</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup09">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Schwi Dola</li>
+                                                    <li><strong>Quién es:</strong> Protagonista femenina en "No Game No Life: Zero"</li>
+                                                    <li><strong>Raza:</strong> Aparentemente humana, pero con diferencias notables, como dos colas y características mecánicas en su cuerpo.</li>
+                                                    <li><strong>Edad:</strong> No especificada en la película, pero puedes buscar más detalles en la novela ligera o en otras fuentes</li>
+                                                </ul>
+                                                <span class="cerrar" onclick="cerrarPopup09()">Cerrar</span>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup09() {
+                                                document.getElementById("miPopup09").style.display = "block";
+                                            }
+                                            function cerrarPopup09() {
+                                                document.getElementById("miPopup09").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup10()"><div class="card">
+                                        <img src="riku.png" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Riku Dola</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup10">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Riku Dola</li>
+                                                    <li><strong>Quién es:</strong> Protagonista masculino en "No Game No Life: Zero" Riku es un estratega maestro y manipulador, similar a Sora. Es capaz de engañar incluso a la matriarca de la familia Nilvalen (conocida como la elfa más fuerte e inteligente en ese momento) para obtener información valiosa, aunque a costa de su salud.</li>
+                                                    <li><strong>Raza:</strong> Imanity (humano)</li>
+                                                    <li><strong>Edad:</strong> 18 años durante la Gran Guerra en Disboard</li>
+                                                </ul>
+                                                <span class="cerrar" onclick="cerrarPopup10()">Cerrar</span>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup10() {
+                                                document.getElementById("miPopup10").style.display = "block";
+                                            }
+                                            function cerrarPopup10() {
+                                                document.getElementById("miPopup10").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup12()"><div class="card">
+                                        <img src="couronne.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Couronne Dola</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup12">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Couronne Dola</li>
+                                                    <li><strong>Quién es:</strong> Couronne es una de las colonizadoras en la historia de Tet y se supone que es la hermana mayor de Riku. Su apariencia es muy similar a la de Stephanie Dola. Como directa antecesora de Stephanie, fundó y se convirtió en la primera reina del reino de Elchea</li>
+                                                    <li><strong>Raza:</strong> Imanity (humana)</li>
+                                                    <li><strong>Edad:</strong> No especificada, pero puedes buscar más detalles en la novela ligera o en otras fuentes</li>
+                                                </ul>
+                                                <span class="cerrar" onclick="cerrarPopup12()">Cerrar</span>
+                                            </div>
+                                        </div>
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup12() {
+                                                document.getElementById("miPopup12").style.display = "block";
+                                            }
+                                            function cerrarPopup12() {
+                                                document.getElementById("miPopup12").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup11()"><div class="card">
+                                        <img src="azriel.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Azriel</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup11">
+                                            <div class="container01">
+                                                <ul>
+                                                    <li><strong>Nombre:</strong> Azriel</li>
+                                                    <li><strong>Quién es:</strong> Representante de los Flügel y "hermana mayor" de Jibril. Durante la Gran Guerra, desempeñó el papel de transmitir la voluntad de Artosh al resto de los Flügel. Aunque comparte similitudes físicas con otros Flügel, también tiene una cornamenta curvada en el lado izquierdo de la cabeza.</li>
+                                                    <li><strong>Raza:</strong> Flügel (una raza alada y poderosa)</li>
+                                                    <li><strong>Edad:</strong> La más antigua entre los Flügel, pero su edad específica no se menciona</li>
+                                                </ul>
+                                                <span class="cerrar" onclick="cerrarPopup11()">Cerrar</span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup11() {
+                                                document.getElementById("miPopup11").style.display = "block";
+                                            }
+                                            function cerrarPopup11() {
+                                                document.getElementById("miPopup11").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup()"><div class="card">
+                                        <img src="logo.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Personaje</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup">
+                                            <p>¡Hola! Esto es una ventana emergente con animación.</p>
+                                            <!-- Otro contenido aquí -->
+                                            <span class="cerrar" onclick="cerrarPopup()">Cerrar</span>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup() {
+                                                document.getElementById("miPopup").style.display = "block";
+                                            }
+                                            function cerrarPopup() {
+                                                document.getElementById("miPopup").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup()"><div class="card">
+                                        <img src="logo.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Personaje</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup">
+                                            <p>¡Hola! Esto es una ventana emergente con animación.</p>
+                                            <!-- Otro contenido aquí -->
+                                            <span class="cerrar" onclick="cerrarPopup()">Cerrar</span>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup() {
+                                                document.getElementById("miPopup").style.display = "block";
+                                            }
+                                            function cerrarPopup() {
+                                                document.getElementById("miPopup").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup()"><div class="card">
+                                        <img src="logo.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Personaje</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup">
+                                            <p>¡Hola! Esto es una ventana emergente con animación.</p>
+                                            <!-- Otro contenido aquí -->
+                                            <span class="cerrar" onclick="cerrarPopup()">Cerrar</span>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup() {
+                                                document.getElementById("miPopup").style.display = "block";
+                                            }
+                                            function cerrarPopup() {
+                                                document.getElementById("miPopup").style.display = "none";
+                                            }
+                                        </script>
+                                <div class="col pt-2">
+                                    <div class="ver-mas" onclick="mostrarPopup()"><div class="card">
+                                        <img src="logo.jpg" class="card-img-top" alt="Programación básica" height="200px">
+                                        <div class="card-body">
+                                            <div class="carousel-caption">
+                                                <h5>Personaje</h5>
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                </div>
+                                    <!-- Contenido de la ventana emergente -->
+                                        <div class="popup" id="miPopup">
+                                            <p>¡Hola! Esto es una ventana emergente con animación.</p>
+                                            <!-- Otro contenido aquí -->
+                                            <span class="cerrar" onclick="cerrarPopup()">Cerrar</span>
+                                        </div>
+
+                                        <!-- Script para mostrar y ocultar la ventana emergente -->
+                                        <script>
+                                            function mostrarPopup() {
+                                                document.getElementById("miPopup").style.display = "block";
+                                            }
+                                            function cerrarPopup() {
+                                                document.getElementById("miPopup").style.display = "none";
+                                            }
+                                        </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        
+        
+            </div>
+        
+            <div class="container-fluid pt-3 text-light">
+              <footer class="text-center mt-auto">
+                <div class="row">
+                  <div class="col-lg-8 d-flex align-items-center justify-content-center">
+                    <p class="fs-5 mb-0 text-center"><b>&copy; 2024 Wiki No Game No Life</b></p>
+                  </div>
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <p class="fs-4 mb-1 text-center"><b>Yuki</b></p>
+                    
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <script>
+            document.querySelectorAll('a.nav-link').forEach(anchor => {
+              anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+        
+                // Verifica si el href es una referencia a una sección de la misma página
+                if (href.startsWith('#')) {
+                  e.preventDefault();
+        
+                  const targetId = href.substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  const offset = document.querySelector('.navegacion').offsetHeight;
+        
+                  window.scrollTo({
+                    top: targetElement.offsetTop - offset,
+                    behavior: 'smooth'
+                  });
+                }
+              });
+            });
+          </script>
+    </body>
+</html>

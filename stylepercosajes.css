@@ -1,0 +1,21 @@
+.text-area {
+    padding: 15px;
+    transform: translate(0%, 15%);
+}
+
+.vermas:hover{
+    font-weight: bold;
+    transform: translate(20%, 0%);
+}
+
+.card-img {
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+    opacity: 0.5; /* Controla la opacidad del efecto oscuro */
+}
+
+/* Responsive Design (example - adjust values as needed) */
+@media (max-width: 768px) {
+    .movie-card-container {
+        width: 100%;
+    }
+}
